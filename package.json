@@ -1,0 +1,26 @@
+{
+  "name": "jwt-auth-poc",
+  "description": "Hapijs JWT POC",
+  "version": "0.1.0",
+  "main": "server",
+  "engines": {
+    "node": ">=0.10.22"
+  },
+  "dependencies": {
+    "boom": "^2.6.1",
+    "hapi": "^8.2.0",
+    "joi": "^5.1.0",
+    "mongoose": "3.8.23"
+  },
+  "keywords": [
+    "node.js",
+    "hapi.js",
+    "mongoose",
+    "angular"
+  ],
+  "main":"server/server.js",
+  "author": {
+    "name": "gaurav gupta",
+    "email": "gaurav_bng@hotmail.com"
+  }
+}
