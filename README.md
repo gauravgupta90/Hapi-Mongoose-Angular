@@ -35,7 +35,7 @@ You can change the settings in server/config/config.js file
 	POST: http://localhost:8000/user
 
 	{
-	"userId": "www.cronj.com",
+	"userId": "gauravgupta90",
 	"username": "gaurav_bng@hotmail.com"
 	}
 
@@ -47,23 +47,23 @@ You can change the settings in server/config/config.js file
 
 	GET:  http://localhost:8000/user/{userId}
       
-      Example : http://localhost:8000/user/www.cronj.com
+      Example : http://localhost:8000/user/gauravgupta90
 
 ###### *Update User By userId*
 
 	PUT: http://localhost:8000/user/{userId}
 
-     Example : http://localhost:8000/user/www.cronj.com
+     Example : http://localhost:8000/user/gauravgupta90
 
 	{
-	"username": "gaurav@cronj.com"
+	"username": "gaurav_bng@hotmail.com"
 	}
 
 ###### *Delete User By userId*
 
 	DELETE: http://localhost:8000/user/{userId}
 
-			Example : http://localhost:8000/user/www.cronj.com
+			Example : http://localhost:8000/user/gauravgupta90
 
 ###### *Delete User Collection*
 
