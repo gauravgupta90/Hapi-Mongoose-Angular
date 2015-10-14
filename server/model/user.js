@@ -48,6 +48,18 @@ UserSchema.virtual('fullname').get(function() {
   }
 });
 
+// will validate firstname only contains alphabet.
+
+UserSchema.path('firstname').validate(function (v) {
+    return !/[^a-zA-Z]/.test(v);
+});
+
+// will validate firstname only contains alphabet.
+
+UserSchema.path('lastname').validate(function (v) {
+    return !/[^a-zA-Z]/.test(v);
+});
+
 UserSchema.statics.getAllUsers= function(callback) {
     this.find({}, callback);
 };
