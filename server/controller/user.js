@@ -36,8 +36,7 @@ exports.create = {
     payload: {
       userId   : Joi.string().required(),
       username  : Joi.string().required(),
-      firstname  : Joi.string().required(),
-      lastname  : Joi.string(),
+      fullname  : Joi.string().required()
     }
   },
   handler: function (request, reply) {

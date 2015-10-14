@@ -48,6 +48,13 @@ UserSchema.virtual('fullname').get(function() {
   }
 });
 
+UserSchema.virtual('fullname').set(function (fullname) {
+  var split = fullname.split(' ');
+  this.firstname = split[0];
+  this.lastname = split[1];
+});
+
+
 // will validate firstname only contains alphabet.
 
 UserSchema.path('firstname').validate(function (v) {
