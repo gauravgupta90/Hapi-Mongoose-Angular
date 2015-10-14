@@ -1,5 +1,5 @@
 Hapi.js-Mongoose-Angular Skeleton
-================================================
+==================================
 
 The purpose of this app is to prepare a basic Skeleton for a node.js project and show a new way to work with Hapi.js, Mongodb, Mongoose, Angular.js.
 
