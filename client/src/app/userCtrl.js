@@ -1,18 +1,14 @@
 app.controller('userCtrl', [ '$scope', '$http','$location', 'growl',
 	function($scope, $http, $location,  growl){
 
-		$scope.uploadfile = function(){
-			$http.post('/upload',$scope.file).then(function(data){
-				console.log('success');
-				// $scope.sectionList = data;
+		$scope.submit = function(){
+			console.log($scope.user);
+			$http.post('/user',$scope.user).then(function(data){
+				alert("Successfully created");
 			}).catch(function(error){
-				growl.addErrorMessage('oops! Something went wrong');
+				//growl.addErrorMessage('oops! Something went wrong');
+				alert("Oops something went wrong !!");
 			})
-		}
-
-		$scope.onFileSelect = function($files){
-			$scope.file = $files[0].name; 
-			console.log($scope.file);
 		}
 	}]
 )
